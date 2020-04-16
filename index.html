@@ -16,19 +16,33 @@ body, html {height: 100%}
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
-h1, h2, h3, h4 {
+h1 {
 font-family: 'IBM Plex Sans', sans-serif;
-text-align:center
+text-align:center;
 }
+h2, h3, h4 {
+font-family: 'IBM Plex Sans', sans-serif;
+text-align:center;
+margin:25px;
+}
+h4 {
+  font-weight: 600;
+}
+h5 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-align: center;
+  margin-left: -35%;
+  font-weight: 900;
+  font-size: 23px;
 
+}
 p {
 font-family: 'IBM Plex Sans', sans-serif;
-text-align:center
+text-align:center;
 }
 
-ul {
+.menu {
   font-family: 'IBM Plex Sans', sans-serif;
   list-style-type: none;
   margin: 0;
@@ -36,10 +50,18 @@ ul {
   overflow: hidden;
   background-color: #006699;
 }
-li {
-  float: left;
+ul {
+  display: table;
+  margin: 0 auto;
+}
+ul li {
+  font-size:20px;
+  margin:15px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  padding-left: 0;
 }
 li a {
+  float: left;
   display: block;
   color: white;
   text-align: center;
@@ -53,17 +75,30 @@ li a {
   </head>
 <body>
   <!-- Navigation menu -->
-  <ul>
+  <div class="menu">
     <li><a href="#">Watson Help Desk Bot</a></li>
   
-  </ul>
+  </div>
 
 <h1> Watson Help Desk Bot</h1>
-<img style="width:20%" src="Favicon.png" class="center">
+<img style="width:21%; margin-bottom:35px" src="Favicon.png" class="center">
   <p style="width:60%" class="center">In this developer code pattern, we use the typical customer care chatbot experience but instead of relying on predefined responses, our dialog will provide a hook that can call out to other IBM Watson® services for additional sources of information. In our case, it will be an owners manual that has been uploaded into Watson Discovery.</p>
- <h4><b><a href="https://developer.ibm.com/patterns/enhance-customer-help-desk-with-smart-document-understanding/">Click here for a full tutorial</a></b></h4>
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  
+ <h4><a href="https://developer.ibm.com/patterns/enhance-customer-help-desk-with-smart-document-understanding/">Click here for a full tutorial</a></h4>
+ <h5>Example Queries</h5>
+<div>
+  <ul>
+    <li>
+      How do I turn on the heater?
+    </li>
+    <li>
+      How do I set the time?
+    </li>
+    <li>
+      How do I access the settings?
+    </li>
+  </ul>
+</div>
+ <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
 </div>
 
 </body>
